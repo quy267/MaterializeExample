@@ -26,35 +26,38 @@
     <div class="table1">
         <div class="row" style="border-bottom: 1px solid #EEEEEE">
             <div class="col s1" style="text-align: center; vertical-align: middle">Table 1</div>
-            <div class="col s1" style="margin-top: -10px;"
-            >
-                <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Year</a>
-                <!-- Dropdown Structure -->
-                <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">2017</a></li>
-                    <li><a href="#!">2016</a></li>
-                    <li><a href="#!">2015</a></li>
-                </ul>
+            <div class="input-field col s1" style="margin-top: -10px">
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
             </div>
-            <div class="col s1" style="margin-top: -10px;"
-            >
-                <a class='dropdown-button btn' href='#' data-activates='dropdown2'>Month</a>
-                <!-- Dropdown Structure -->
-                <ul id='dropdown2' class='dropdown-content'>
-                    <li><a href="#!">January</a></li>
-                    <li><a href="#!">February</a></li>
-                    <li><a href="#!">March</a></li>
-                </ul>
+
+
+            <div class="input-field col s1" style="margin-top: -10px">
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
             </div>
-            <div class="col s1" style="margin-top: -10px;"
-            >
-                <a class='dropdown-button btn' href='#' data-activates='dropdown3'>Day</a>
-                <!-- Dropdown Structure -->
-                <ul id='dropdown3' class='dropdown-content'>
-                    <li><a href="#!">1</a></li>
-                    <li><a href="#!">2</a></li>
-                    <li><a href="#!">3</a></li>
-                </ul>
+
+            <div class="input-field col s1" style="margin-top: -10px">
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="col s1 push-s4" style="margin-top: -10px;">
+                <p>Example</p>
+            </div>
+            <div class="col s1 push-s4" style="margin-top: -10px;">
+                <p>13:45:22</p>
+            </div>
+            <div class="col s1 push-s4" style="margin-top: -10px;margin-left: 62px;">
+                <a class="btn">Button</a>
             </div>
         </div>
         <div class="row" style="background-color: white;margin-top: -17px;">
@@ -176,5 +179,12 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+
+    </script>
+</div>
 </body>
 </html>
